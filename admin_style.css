@@ -1,0 +1,51 @@
+header{
+  background: #1a2732;
+  min-height: 60px;
+  
+}
+.nav-link {
+   color: #fff; 
+}
+
+.sidebar{
+    background: #394a59;
+    //margin: 0 -15px 0 0;
+    padding:  15px 0;
+    //height: 100%;
+}
+.sidebar li{
+    border-bottom: 1px solid #fff;
+}
+
+.content{
+     background: #E9E9E9; 
+     //margin: 0 0 0 -15px;
+     padding: 20px ;
+     //height: 100%;
+}
+.line{
+    height:4px;
+    width:auto;
+    border-top:1px solid #fff;      
+}
+
+ion-icon {
+  font-size: 18px;
+    margin-bottom: -3px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width : 480px){
+
+} 
+
+@media only screen and (max-width : 360px){
+    
+
+}
