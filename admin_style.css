@@ -9,17 +9,19 @@ header{
 
 .sidebar{
     background: #394a59;
-    //margin: 0 -15px 0 0;
     padding:  15px 0;
     //height: 100%;
+    padding-left: 5px;
 }
 .sidebar li{
     border-bottom: 1px solid #fff;
 }
+.sidebar .nav-item a:hover{
+    background: #31404d;
+}
 
 .content{
      background: #E9E9E9; 
-     //margin: 0 0 0 -15px;
      padding: 20px ;
      //height: 100%;
 }

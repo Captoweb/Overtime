@@ -29,7 +29,7 @@
      </div>
      
      <div class="form-group">
-         <button class="btn btn-success" type="submit"><ion-icon  name="add-circle"></ion-icon> Добавть</button>
+         <button class="btn btn-success" type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавть</button>
      </div>
  </form>   
 

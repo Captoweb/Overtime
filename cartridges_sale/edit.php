@@ -41,7 +41,8 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
      </div>
      
      <div class="form-group">
-         <button class="btn btn-success" type="submit"><ion-icon  name="add-circle"></ion-icon> Изменить</button>
+         <button class="btn btn-warning" type="submit"><i class="fa fa-pencil" aria-hidden="true"></i>
+ Изменить</button>
      </div>
  </form>   
 

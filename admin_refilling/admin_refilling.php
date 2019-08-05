@@ -10,15 +10,12 @@
 <?php require_once('../admin_sidebar.php'); ?>  
 
  
-
 <?php
  require_once('../connect.php');
 
 $sql = "SELECT * FROM refilling_cartridges";
-
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
-
 $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
@@ -28,7 +25,8 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
    <h2 class="pb-2">Заправка картриджей</h2>  
     
-     <a href="create.php"  class="btn btn-success"><ion-icon  name="add-circle"></ion-icon> Добавить картридж</a>
+     <a href="create.php"  class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+ Добавить картридж</a>
 <h4>Добавление, редактирование и удаление</h4>
      
  <table class="table table-striped table-bordered">
@@ -49,9 +47,11 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <td><?= $printer['cartridge']; ?></td>
       <td><?= $printer['price']; ?></td>
       <td>
-        <a href="edit.php?id=<?=$printer['id']; ?>" class="btn btn-warning"><ion-icon name="create"></ion-icon> Edit</a>
+        <a href="edit.php?id=<?=$printer['id']; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>
+ Edit</a>
         
-        <a onclick="return confirm('Вы уверенны?')" href="delete.php?id=<?=$printer['id']; ?>" class="btn btn-danger"><ion-icon name="trash"></ion-icon> Delete</a>
+        <a onclick="return confirm('Вы уверенны?')" href="delete.php?id=<?=$printer['id']; ?>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>
+ Delete</a>
       </td>
     </tr>
    <?php endforeach; ?>

@@ -20,6 +20,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
            <div class="col-md">
               <h1>Заправка картриджей</h1> 
                
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -40,7 +41,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
                    <?php endforeach; ?>
               </tbody>
             </table>
-            
+               </div>
             </div>
         </div>
     </div>

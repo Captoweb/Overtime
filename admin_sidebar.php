@@ -1,4 +1,4 @@
-         <header class="col-md-2 sidebar">
+    <header class="col-md-2 sidebar">
           <nav class="sidebar-sticky  navbar-dark navbar-expand-md ">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,5 +35,5 @@
             </div>
           </nav>
           
-        </header>
+    </header>
         <!-- end header -->

@@ -118,15 +118,19 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
    
    <section class="aboutus">
        <div class="container">
-           <div class="row">
-           <div class="col-md">
-      <p> 	
-       <h3><?= $printers['title']; ?></h3>
-<p><?= $printers['content1']; ?></p>
+              <h3><?= $printers['title']; ?></h3>
+               <div class="row">
+                 <div class="col-md-12">
+                     
+                   <p>
+                     <?= $printers['content1']; ?>
+                   </p>
 
-<p><?= $printers['content2']; ?></p>
-           </div> 
-       </div>
+                   <p>
+                      <?= $printers['content2']; ?>
+                    </p>
+               </div> 
+           </div>
        </div>
    </section>
    
@@ -134,26 +138,21 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
     <section class="contact">
       <div class="container">
       <h3>Свяжитесь с нами</h3>
-       <div class="row">
-        
        
-      </div>
       <div class="row">
         <div class="col-md-4 ">	
 		 <div class="contact_info">
-                            <div class="detail">
-                                <h4>Наш адрес</h4>
-                                <p>Ростов-на-Дону, Социалистическая, 141, оф 17 </p>
-                            </div>
-                            <div class="detail">
-                                <h4>Наш телефон</h4>
-                                <p>8-950-867-84-78</p>
-                            </div>
-                            <div class="detail">
-                                <h4>E-mail</h4>
-                                <p>over-time-w@mail.ru</p>
-                            </div> 
-                        </div>
+                            
+                    <h4>Наш адрес</h4>
+                    <p>Ростов-на-Дону, Социалистическая, 141, оф 17 </p>
+
+                    <h4>Наш телефон</h4>
+                    <p>8-950-867-84-78</p>
+
+                    <h4>E-mail</h4>
+                    <p>over-time-w@mail.ru</p>
+                            
+             </div>
           
         </div>
         

@@ -115,6 +115,9 @@ p{
     background: #fff;
     border-radius: 7px;
 }
+ .nav-item a:hover{
+     color: black !important;
+}
 
 .line{
     height:4px;
