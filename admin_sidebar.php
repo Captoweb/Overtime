@@ -9,7 +9,11 @@
               <ul class="navbar-nav mr-auto flex-column">
                 <li class="nav-item active">
                   <a href="../admin_refilling/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
-  Заправка картриджей</a>
+  Заправка картриджей HP LaserJet</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling2/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Canon</a>
                 </li>
                 <li class="nav-item active">
                   <a href="../printer_repair/printer_repair.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>

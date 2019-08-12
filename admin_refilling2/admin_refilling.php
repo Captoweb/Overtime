@@ -13,7 +13,7 @@
 <?php
  require_once('../connect.php');
 
-$sql = "SELECT * FROM refilling_cartridges";
+$sql = "SELECT * FROM refilling_cartridges2";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -23,7 +23,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
 <main class="col-md-10 content">    
 
-   <h2 class="pb-2">Заправка картриджей HP</h2>  
+   <h2 class="pb-2">Заправка картриджей Canon</h2>  
     
     <h5>Добавление, редактирование и удаление</h5>
      <a href="create.php"  class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp; 
