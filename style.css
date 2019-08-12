@@ -200,3 +200,94 @@ ion-icon{
     padding: 40px 0 50px 0;
     background: #dcdcdc;  
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ .hidden_img {
+        display: none;
+    }
+
+
+/* ---------------- ajax------------------*/
+.message{
+    border: 1px solid green;
+    background: #93c54b; 
+    padding: 6px 12px;
+    border-radius: .25rem;
+    font-size: 16px;
+    display: none;
+}
+#ajaxerror{
+    border: 1px solid red;
+    background: #dc3545; 
+    padding: 6px 12px;
+    border-radius: .25rem;
+    font-size: 16px;
+    display: none;
+}
+
+.title{
+    padding: 5px 9px;
+    font-size: 16px;
+    max-width: 100%;
+    border-radius: .25rem;
+    border: 1px solid black;
+}
+
+.content{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: .25rem;
+    border: 1px solid black;
+    max-height: 600px;
+    min-height: 60px;
+    display: block;
+}
+
+@media only screen and (max-width : 776px){
+     .services{
+     padding: 20px 10px;
+    }
+    .ourplus{ 
+        padding: 30px 20px;
+    }
+    .aboutus{
+        padding: 20px 10px;
+    }
+    .contact{
+        padding: 25px 10px;  
+    }
+}
+   
+
+
+@media only screen and (max-width : 480px){
+
+    .slide {
+        display: none; 
+    }
+    .hidden_img {
+        display: block;
+    }
+    
+    .services{
+     padding: 20px 5px;
+    }
+    .ourplus{ 
+        padding: 30px 10px;
+    }
+    .aboutus{
+        padding: 20px 5px;
+    }
+    .contact{
+        padding: 25px 5px;  
+    }
+    
+     .hidden {
+        display: none; 
+    }
+    
+} 

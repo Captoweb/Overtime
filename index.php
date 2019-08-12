@@ -11,6 +11,7 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
   
   <?php require_once('header.php'); ?>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   <div class="slide">
            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
@@ -32,6 +33,9 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
   </a>
 </div><!--end of carousel-->
        </div>
+       <div>
+       <img class="hidden_img" src="img/bg1-mobile2-min.jpg">
+      </div>
    </div>
    
    <section class="services">
@@ -157,24 +161,58 @@ $printers = $stmt->fetch(PDO::FETCH_ASSOC);
         </div>
         
         <div class="col-lg-8">
-          <form action="mail.php" method="POST">
+         
+          <form action="mail.php" method="POST" onsubmit = "return validate();">
+             
               <div class="form-group">
-                
-                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя">
+                <input type="name" name="name" class="form-control name" id="userName"  placeholder="Ваше имя">
               </div>
-              <div class="form-group">
-                
-                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Ваш телефон">
-              </div>
+                <span id = "ajax_name" class="message"></span>
+                <span id = "ajax_error" class="message"></span>
               
               <div class="form-group">
-                
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Опишите проблему"></textarea>
+                <input type="tel" name="tel" class="form-control tel" id="userTel" placeholder="Ваш телефон">
               </div>
+              
+              
+              <div class="form-group">
+                <textarea class="form-control text" name="text" id="userTextarea" rows="3" placeholder="Опишите проблему"></textarea>
+              </div>
+              
+              
               <button type="submit" class="btn btn-primary violet">Отправить</button>
-         </form>
-       
+        </form>
+         
+        <script>
+            function validate() {
+
+            var userName = document.getElementById("userName");
+            var userTel = document.getElementById("userTel");
+            var userTextarea = document.getElementById("userTextarea");
+
+
+              if(!userName.value){
+                  userName.style.border = "2px solid red";
+                  return false;
+              }
+
+              if(!userTel.value){
+                  userTel.style.border = "2px solid red";
+                  return false;
+              }
+
+               if(!userTextarea.value){
+                  userTextarea.style.border = "2px solid red";
+                  return false;
+              }
+                return true;
+            }
+        </script>
+           
         </div>
+         
+          <div id="out_ajax1"></div>
+          <div id="out_ajax2"></div>
       </div>
         </div>
     </section>

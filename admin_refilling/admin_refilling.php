@@ -25,39 +25,41 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
    <h2 class="pb-2">Заправка картриджей</h2>  
     
-     <a href="create.php"  class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+    <h5>Добавление, редактирование и удаление</h5>
+     <a href="create.php"  class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp; 
  Добавить картридж</a>
-<h4>Добавление, редактирование и удаление</h4>
-     
+
+    
+<div class="table-responsive-sm"><!-- адаптивная таблица -->      
  <table class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th scope="col">id</th>
+      <th scope="col" class="hidden">id</th>
       <th scope="col">Модель принтера</th>
       <th scope="col">Картридж</th>
       <th scope="col">Цена услуги</th>
-      <th scope="col">Действия</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
    <?php foreach($printers as $printer):?>
     <tr>
-      <th scope="row"><?= $printer['id']; ?></th>
+      <th scope="row" class="hidden"><?= $printer['id']; ?></th>
       <td><?= $printer['printer']; ?></td>
       <td><?= $printer['cartridge']; ?></td>
       <td><?= $printer['price']; ?></td>
       <td>
         <a href="edit.php?id=<?=$printer['id']; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>
- Edit</a>
+ </a>
         
         <a onclick="return confirm('Вы уверенны?')" href="delete.php?id=<?=$printer['id']; ?>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>
- Delete</a>
+ </a>
       </td>
     </tr>
    <?php endforeach; ?>
   </tbody>
 </table>
-       
+    </div>   
     <br>
         <p>Образец верстки</p>
         <p>https://bootstrapmade.com/demo/themes/NiceAdmin/basic_table.html</p>

@@ -19,10 +19,11 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
            <div class="col-md">
              <h1>Продажа картриджей</h1>
                
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
-                  <th scope="col">id</th>
+                  <th scope="col" class="hidden">id</th>
                   <th scope="col">Модель оргтехники</th>
                   <th scope="col">Модель картриджа</th>
                   <th scope="col">Цена услуги</th>
@@ -31,7 +32,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <tbody>
                   <?php foreach($printers as $printer):?>
                     <tr>
-                      <th scope="row"><?= $printer['id']; ?></th>
+                      <th scope="row" class="hidden"><?= $printer['id']; ?></th>
                       <td><?= $printer['printer']; ?></td>
                       <td><?= $printer['model']; ?></td>
                       <td><?= $printer['price']; ?></td>
@@ -40,6 +41,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 
               </tbody>
             </table>
+               </div>
             </div>
         </div>
     </div>

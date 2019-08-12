@@ -23,7 +23,6 @@ header{
 .content{
      background: #E9E9E9; 
      padding: 20px ;
-     //height: 100%;
 }
 .line{
     height:4px;
@@ -41,13 +40,35 @@ img{
     height: auto;
 }
 
+.btn-success {
+    margin-bottom: 10px;
+} 
 
+h5{
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width : 776px){
+    .sidebar{
+        padding:  15px;
+    }
+   
+}
 
 @media only screen and (max-width : 480px){
-
+    .hidden {
+        display: none; 
+    }
+    
+    .content{ 
+        padding: 15px 10px;     
+   }
+    
 } 
 
 @media only screen and (max-width : 360px){
     
-
+    
+  
+    }
 }

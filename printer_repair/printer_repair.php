@@ -26,8 +26,9 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <h2 class="pb-2">Ремонт принтеров </h2>  
     
+    <h5>Добавление, редактирование и удаление</h5>
      <a href="create.php"  class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавить принтер</a>
-<h4>Добавление, редактирование и удаление</h4>
+
      
  <table class="table table-striped table-bordered">
   <thead>
@@ -36,7 +37,7 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <th scope="col">Модель принтера</th>
       <th scope="col">ХЗ</th>
       <th scope="col">Цена</th>
-      <th scope="col">Действия</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -48,10 +49,10 @@ $printers = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <td><?= $printer['price']; ?></td>
       <td>
         <a href="edit.php?id=<?=$printer['id']; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>
- Edit</a>
+ </a>
         
         <a onclick="return confirm('Вы уверенны?')" href="delete.php?id=<?=$printer['id']; ?>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>
- Delete</a>
+ </a>
       </td>
     </tr>
    <?php endforeach; ?>
