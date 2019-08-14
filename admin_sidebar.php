@@ -9,12 +9,30 @@
               <ul class="navbar-nav mr-auto flex-column">
                 <li class="nav-item active">
                   <a href="../admin_refilling/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
-  Заправка картриджей HP LaserJet</a>
+  Заправка картриджей HP</a>
                 </li>
                 <li class="nav-item active">
                   <a href="../admin_refilling2/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
   Заправка картриджей Canon</a>
                 </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling3/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Samsung</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling4/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Brother</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling5/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Xerox</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling6/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Kyocera</a>
+                </li>
+                
+                
                 <li class="nav-item active">
                   <a href="../printer_repair/printer_repair.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
  Ремонт принтеров </a>
