@@ -32,6 +32,26 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $printers6 = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+$sql = "SELECT * FROM refilling_cartridges7";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$printers7 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM refilling_cartridges8";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$printers8 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM refilling_cartridges9";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$printers9 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM refilling_cartridges10";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 <?php require_once("header.php"); ?>
 
@@ -190,6 +210,106 @@ $printers6 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица -->
+               
+               <br>
+               <h3>Заправка картриджей Panasonic</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
+                <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="hidden">id</th>
+                  <th scope="col">Модель оргтехники</th>
+                  <th scope="col">Модель картриджа</th>
+                  <th scope="col">Цена услуги</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach($printers7 as $printer7):?>
+                    <tr>
+                      <th scope="row" class="hidden"><?= $printer7['id']; ?></th>
+                      <td><?= $printer7['printer']; ?></td>
+                      <td><?= $printer7['cartridge']; ?></td>
+                      <td><?= $printer7['price']; ?></td>
+                    </tr>
+                   <?php endforeach; ?>
+              </tbody>
+            </table>
+               </div><!--/end of адаптивная таблица Panasonic -->
+               
+               <br>
+               <h3>Заправка картриджей Sharp</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
+                <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="hidden">id</th>
+                  <th scope="col">Модель оргтехники</th>
+                  <th scope="col">Модель картриджа</th>
+                  <th scope="col">Цена услуги</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach($printers8 as $printer8):?>
+                    <tr>
+                      <th scope="row" class="hidden"><?= $printer8['id']; ?></th>
+                      <td><?= $printer8['printer']; ?></td>
+                      <td><?= $printer8['cartridge']; ?></td>
+                      <td><?= $printer8['price']; ?></td>
+                    </tr>
+                   <?php endforeach; ?>
+              </tbody>
+            </table>
+               </div><!--/end of адаптивная таблица Sharp -->
+               
+               <br>
+               <h3>Заправка картриджей Ricoh</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
+                <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="hidden">id</th>
+                  <th scope="col">Модель оргтехники</th>
+                  <th scope="col">Модель картриджа</th>
+                  <th scope="col">Цена услуги</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach($printers9 as $printer9):?>
+                    <tr>
+                      <th scope="row" class="hidden"><?= $printer9['id']; ?></th>
+                      <td><?= $printer9['printer']; ?></td>
+                      <td><?= $printer9['cartridge']; ?></td>
+                      <td><?= $printer9['price']; ?></td>
+                    </tr>
+                   <?php endforeach; ?>
+              </tbody>
+            </table>
+               </div><!--/end of адаптивная таблица Ricoh-->
+               
+               <br>
+               <h3>Заправка картриджей Oki</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
+                <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="hidden">id</th>
+                  <th scope="col">Модель оргтехники</th>
+                  <th scope="col">Модель картриджа</th>
+                  <th scope="col">Цена услуги</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach($printers10 as $printer10):?>
+                    <tr>
+                      <th scope="row" class="hidden"><?= $printer10['id']; ?></th>
+                      <td><?= $printer10['printer']; ?></td>
+                      <td><?= $printer10['cartridge']; ?></td>
+                      <td><?= $printer10['price']; ?></td>
+                    </tr>
+                   <?php endforeach; ?>
+              </tbody>
+            </table>
+               </div><!--/end of адаптивная таблица Oki-->
                
             </div>
         </div>

@@ -206,9 +206,28 @@ img{
     height: auto;
 }
 
- .hidden_img {
+.table thead th {
+    
+   border-bottom: 2px solid #9F9F9F; 
+}  
+ 
+.table td, .table th {
+ 
+    border-top: 2px solid #B2B2B2;
+}
+
+
+.hidden_img {
         display: none;
     }
+   
+.hidden {
+        display: none; 
+    } 
+    
+.refilling h3 {
+    padding: 10px 0;
+ }
 
 
 /* ---------------- ajax------------------*/

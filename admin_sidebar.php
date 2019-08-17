@@ -31,6 +31,22 @@
                   <a href="../admin_refilling6/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
   Заправка картриджей Kyocera</a>
                 </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling7/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Panasonic</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling8/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Sharp</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling9/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Ricoh</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../admin_refilling10/admin_refilling.php" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i>
+  Заправка картриджей Oki</a>
+                </li>
                 
                 
                 <li class="nav-item active">
