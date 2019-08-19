@@ -55,18 +55,17 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <?php require_once("header.php"); ?>
 
-
-    
+   
     <section class="refilling">
        <div class="container">
+          
+          <h1>Заправка картриджей</h1> 
            <div class="row">
-           <div class="col-md">
-              <h1>Заправка картриджей</h1> 
-              
-             
-              <button class="accordion">  <h3>Заправка картриджей HP</h3> </button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               
+               
+            <div class="col-md-9">
+               <h3 name="hp">Заправка картриджей HP</h3>
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -88,12 +87,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица HP-->
-                </div>
                
                <br>
-               <button class="accordion"><h3>Заправка картриджей Canon</h3></button>
-                <div class="panel">
-                     <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3><a name="canon">Заправка картриджей Canon</a></h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -115,13 +112,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Canon-->
-                </div>
-                           
-                
+               
                <br>
-               <button class="accordion"><h3>Заправка картриджей Samsung</h3></button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Samsung</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -143,13 +137,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Samsung-->
-                </div>
                
-                
                <br>
-               <button class="accordion"><h3>Заправка картриджей Brother</h3></button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Brother</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -171,13 +162,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Brother-->
-                </div>
-                
                
                <br>
-               <button class="accordion"> <h3>Заправка картриджей Xerox</h3></button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Xerox</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -199,13 +187,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Xerox-->
-                </div>
-                
                
                <br>
-               <button class="accordion"><h3>Заправка картриджей Kyocera</h3></button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Kyocera</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -227,13 +212,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Kyocera-->
-                </div>
-                
-                              
+               
                <br>
-               <button class="accordion">  <h3>Заправка картриджей Panasonic</h3> </button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Panasonic</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -255,13 +237,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Panasonic -->
-                </div>
-                          
                
                <br>
-               <button class="accordion"> <h3>Заправка картриджей Sharp</h3></button>
-                <div class="panel">
-                     <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Sharp</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -283,13 +262,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Sharp -->
-                </div>
-                
-              
+               
                <br>
-               <button class="accordion"><h3>Заправка картриджей Ricoh</h3> </button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Ricoh</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -311,13 +287,10 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Ricoh-->
-                </div>
-               
                
                <br>
-               <button class="accordion"><h3>Заправка картриджей Oki</h3> </button>
-                <div class="panel">
-                    <div class="table-responsive-sm"><!-- адаптивная таблица -->
+               <h3>Заправка картриджей Oki</h3> 
+               <div class="table-responsive-sm"><!-- адаптивная таблица -->
                 <table class="table table-striped table-bordered">
               <thead>
                 <tr>
@@ -339,17 +312,54 @@ $printers10 = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </tbody>
             </table>
                </div><!--/end of адаптивная таблица Oki-->
-                </div>
-               <br><br>
+               
+            </div><!--/end of col-md-9 -->
+             
+             
+        <div class="col-md-3 fixed"> 
+               
+                <h4>Модель устройства</h4>
                
                
-            </div>
-        </div>
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                    </div>
+                
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#hp">HP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#canon">Canon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Samsung</a>
+                  </li>
+                  
+                   <li class="nav-item">
+                    <a class="nav-link active" href="#hp">HP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#canon">Canon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Samsung</a>
+                  </li>
+                 
+                </ul>
+              </div>
+        </div><!--/end of col-md-3 -->
+        <br><br>
     </div>
+        </div>
+        <br><br><br>
 </section>
- 
   
-<script src = "accordion.js"></script>
+
     <?php require_once('footer.php'); ?>
     
 
